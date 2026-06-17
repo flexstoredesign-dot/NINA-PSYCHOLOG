@@ -2711,3 +2711,27 @@ section {
     line-height: 1.66;
   }
 }
+
+/* Process and First Visit Cleanup */
+.process-section--supportive .process-step__title {
+  margin-top: 0.2rem;
+}
+
+.first-visit-section--pricing-only {
+  padding-top: clamp(5rem, 7vw, 6.875rem);
+}
+
+.first-visit-section--pricing-only .first-visit-section__container {
+  display: block;
+}
+
+.first-visit-section--pricing-only .pricing-card {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .first-visit-section--pricing-only {
+    padding-top: clamp(3rem, 12vw, 4rem);
+  }
+}

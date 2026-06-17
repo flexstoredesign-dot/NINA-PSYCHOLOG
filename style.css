@@ -3214,7 +3214,7 @@ section,
 
   .about-section__intro {
     min-height: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .about-section__side,

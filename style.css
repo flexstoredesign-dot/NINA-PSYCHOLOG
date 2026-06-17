@@ -2026,3 +2026,335 @@ section {
     min-height: 270px;
   }
 }
+
+/* Mobile Polish */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 118px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .section-container {
+    width: calc(100% - 32px);
+  }
+
+  section,
+  .hero-section {
+    padding-block: 38px;
+    scroll-margin-top: 118px;
+  }
+
+  .site-header {
+    align-items: center;
+    gap: 0.55rem;
+    min-height: auto;
+    padding: 0.7rem 16px 0.55rem;
+  }
+
+  .site-logo {
+    justify-self: start;
+  }
+
+  .site-logo__name {
+    font-size: 1rem;
+  }
+
+  .main-navigation {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .main-navigation__list {
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.15rem 0 0.35rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-navigation__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-navigation__item {
+    flex: 0 0 auto;
+  }
+
+  .main-navigation__link {
+    min-height: 34px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: 0.86rem;
+    white-space: nowrap;
+  }
+
+  .main-navigation__link::after {
+    display: block;
+    bottom: 0.15rem;
+    background: var(--color-accent);
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding-top: 32px;
+  }
+
+  .hero-section__container {
+    gap: 1.65rem;
+  }
+
+  .hero-section__title {
+    font-size: clamp(2.875rem, 11.8vw, 3.5rem);
+    line-height: 1.04;
+  }
+
+  .hero-section__subtitle {
+    margin-top: 1.15rem;
+    font-size: 1.12rem;
+    line-height: 1.65;
+  }
+
+  .hero-section__actions {
+    gap: 0.75rem;
+    margin-top: 1.45rem;
+  }
+
+  .hero-section__actions .button {
+    width: 100%;
+  }
+
+  .hero-section__image {
+    aspect-ratio: 4 / 5.15;
+    object-position: center top;
+  }
+
+  .section-heading {
+    margin-bottom: 1.35rem;
+  }
+
+  .section-heading::before {
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-size: clamp(2.625rem, 10.5vw, 3.125rem);
+    line-height: 1.08;
+  }
+
+  .section-subtitle {
+    margin-top: 0.75rem;
+    font-size: 1.04rem;
+    line-height: 1.62;
+  }
+
+  .about-section__container {
+    gap: 1.1rem;
+  }
+
+  .about-section__content {
+    gap: 0.85rem;
+  }
+
+  .about-section__content p,
+  .first-visit-section__content p,
+  .faq-item__answer p,
+  .contact-section__content p {
+    font-size: 1.125rem;
+    line-height: 1.68;
+  }
+
+  .quote-card {
+    padding: 1.45rem;
+  }
+
+  .quote-card p {
+    font-size: 1.35rem;
+    line-height: 1.42;
+  }
+
+  .certificates-grid,
+  .services-grid,
+  .process-timeline {
+    gap: 0.85rem;
+  }
+
+  .certificate-card {
+    min-height: 132px;
+    padding: 30px;
+  }
+
+  .certificate-card__title {
+    font-size: 1.22rem;
+  }
+
+  .certificate-card__organization {
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .process-step__content {
+    min-height: 212px;
+    padding: 1.15rem;
+  }
+
+  .process-step__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .process-step__icon svg {
+    width: 1.22rem;
+    height: 1.22rem;
+  }
+
+  .process-step__number {
+    top: 0.85rem;
+    right: 1rem;
+    font-size: 2.35rem;
+  }
+
+  .process-step__title {
+    font-size: 1.28rem;
+    line-height: 1.22;
+  }
+
+  .process-step__description {
+    margin-top: 0.6rem;
+    font-size: 0.97rem;
+    line-height: 1.55;
+  }
+
+  .service-card {
+    min-height: unset;
+    padding: 1.2rem;
+  }
+
+  .service-card::before {
+    margin-bottom: 0.85rem;
+  }
+
+  .service-card__title {
+    font-size: 1.45rem;
+    line-height: 1.15;
+  }
+
+  .service-card__description {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .service-card__link {
+    margin-top: 1.15rem;
+  }
+
+  .first-visit-section__container {
+    gap: 0.9rem;
+  }
+
+  .first-visit-section__content {
+    gap: 0.8rem;
+    padding: 1.25rem;
+  }
+
+  .first-visit-section__content .section-title {
+    font-size: clamp(2.35rem, 9.5vw, 2.85rem);
+  }
+
+  .first-visit-section__image-wrapper {
+    min-height: 240px;
+  }
+
+  .pricing-card {
+    gap: 1rem;
+    padding: 1.15rem;
+  }
+
+  .pricing-card__title {
+    font-size: 1.45rem;
+  }
+
+  .pricing-card__list {
+    gap: 0.75rem;
+  }
+
+  .pricing-card__item {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .pricing-card dd {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    scroll-padding-top: 112px;
+  }
+
+  .section-container {
+    width: calc(100% - 32px);
+  }
+
+  section,
+  .hero-section {
+    padding-block: 34px;
+    scroll-margin-top: 112px;
+  }
+
+  .site-header {
+    padding-inline: 16px;
+  }
+
+  .main-navigation__list {
+    gap: 0.9rem;
+  }
+
+  .main-navigation__link {
+    font-size: 0.84rem;
+  }
+
+  .hero-section__title {
+    font-size: clamp(2.65rem, 12.2vw, 3.25rem);
+  }
+
+  .section-title {
+    font-size: clamp(2.35rem, 10.8vw, 2.9rem);
+  }
+
+  .about-section__content p,
+  .first-visit-section__content p,
+  .faq-item__answer p,
+  .contact-section__content p {
+    font-size: 1.125rem;
+    line-height: 1.66;
+  }
+
+  .certificate-card {
+    min-height: 126px;
+    padding: 28px;
+  }
+
+  .process-step__content {
+    min-height: 205px;
+  }
+
+  .service-card,
+  .pricing-card,
+  .booking-info-card,
+  .office-address-card,
+  .contact-link-card {
+    padding: 1.1rem;
+  }
+}

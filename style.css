@@ -3097,3 +3097,148 @@ section {
     padding-top: clamp(3rem, 12vw, 4rem);
   }
 }
+
+/* Strict Spacing Fix */
+section,
+.section,
+.about-section,
+.process-section,
+.services-section,
+.first-visit-section,
+.pricing-section,
+.booking-section,
+.office-section,
+.faq-section,
+.contact-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero,
+.hero-section {
+  min-height: auto;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.about-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-section__container {
+  column-gap: clamp(2rem, 5vw, 4.5rem);
+  row-gap: 32px;
+}
+
+.about-section__intro {
+  display: block;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  min-height: 0;
+  margin: 0 0 28px;
+  max-width: none;
+}
+
+.about-section__intro .section-eyebrow {
+  margin: 0;
+}
+
+.about-section__side,
+.about-section__content {
+  grid-row: 2;
+}
+
+.process-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.services-section {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+.first-visit-section--pricing-only {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.booking-section {
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  section,
+  .section,
+  .about-section,
+  .process-section,
+  .services-section,
+  .first-visit-section,
+  .pricing-section,
+  .booking-section,
+  .office-section,
+  .faq-section,
+  .contact-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .hero,
+  .hero-section {
+    min-height: auto;
+    padding-top: 48px;
+    padding-bottom: 28px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .about-section {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .about-section__container {
+    row-gap: 24px;
+  }
+
+  .about-section__intro {
+    min-height: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-section__side,
+  .about-section__content {
+    grid-row: auto;
+  }
+
+  .process-section {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .services-section {
+    padding-top: 28px;
+    padding-bottom: 24px;
+  }
+
+  .first-visit-section--pricing-only {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .booking-section {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+}

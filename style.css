@@ -3305,3 +3305,55 @@ section,
     max-height: 420px;
   }
 }
+
+/* Desktop About Mobile Center Fix */
+.about-section__intro {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .about-section__intro {
+    margin-bottom: 0;
+  }
+
+  .process-section--supportive .section-heading,
+  .process-section--supportive .section-subtitle,
+  .process-section--supportive .process-step__content,
+  .process-section--supportive .process-step__title,
+  .process-section--supportive .process-step__description,
+  .process-step__highlight,
+  .process-note,
+  .process-note p,
+  .services-section .section-heading,
+  .service-card,
+  .service-card__title,
+  .service-card__description,
+  .service-card__link,
+  .pricing-card,
+  .pricing-card__title,
+  .pricing-card dt,
+  .pricing-card dd {
+    text-align: center;
+  }
+
+  .process-section--supportive .process-step__icon,
+  .process-section--supportive .process-step__number,
+  .service-card__link {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .process-section--supportive .process-step__number {
+    align-self: center;
+  }
+
+  .process-note {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card__item {
+    align-items: center;
+    text-align: center;
+  }
+}

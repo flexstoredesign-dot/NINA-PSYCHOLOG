@@ -3393,3 +3393,63 @@ section,
     margin-bottom: 24px;
   }
 }
+
+/* Mobile About Read More Instagram Link */
+.about-extra-mobile {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.about-instagram-link {
+  color: #9a7b70;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(154, 123, 112, 0.28);
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.about-instagram-link:hover {
+  color: var(--color-text);
+  border-color: currentColor;
+}
+
+.about-read-more-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .about-extra-mobile {
+    display: none;
+  }
+
+  .about-section__content.is-expanded .about-extra-mobile {
+    display: grid;
+  }
+
+  .about-read-more-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 22px;
+    padding: 0.78rem 1.25rem;
+    color: var(--color-text);
+    font-weight: 700;
+    background: var(--color-button);
+    border: 1px solid rgba(216, 191, 180, 0.72);
+    border-radius: var(--radius-button);
+    box-shadow: var(--shadow-card);
+    cursor: pointer;
+    transition:
+      transform var(--transition),
+      box-shadow var(--transition),
+      background-color var(--transition);
+  }
+
+  .about-read-more-toggle:hover {
+    background: var(--color-accent);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+}
